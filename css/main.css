@@ -1,0 +1,135 @@
+:root {
+    --light-primary: hsl(71, 73%, 54%);
+    --dark-primary: hsl(179, 62%, 43%);
+    --light-secondary: hsl(204, 43%, 93%);
+    --dark-secondary: hsl(218, 22%, 67%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    line-height: 2;
+}
+
+h1 {
+    color: var(--dark-primary);
+}
+
+h2 {
+    color: var(--light-primary);
+    font-size: 1.3em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.top p {
+    color: var(--dark-secondary);
+}
+
+body {
+    background: var(--light-secondary);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.box {
+    width: 660px;
+    margin: 100px auto;
+    box-shadow: 7px 10px 19px -9px rgba(0,0,0,0.39);
+    border-radius: 15px;
+}
+
+.top, .left, .right {
+    padding: 30px;
+}
+
+.top {
+    width: 100%;
+    background: #ffffff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-sizing: border-box;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--light-secondary);
+}
+
+.left {
+    background-color: var(--dark-primary);
+    border-bottom-left-radius: 15px;
+}
+
+.left-content {
+    width: 90%;
+}
+
+.left h3 {
+    margin-bottom: 10px;
+}
+
+.left p {
+    margin: 10px auto;
+}
+
+.big {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 8px 8px 8px 0;
+}
+
+.faint-paragraph {
+    opacity: 0.6;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    text-decoration: none;
+    background-color: var(--light-primary);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 7px 10px 19px -9px rgba(0,0,0,0.39);
+}
+
+.right {
+    background-color: hsl(179, 54%, 63%);
+    border-bottom-right-radius: 15px;
+}
+
+ul {
+    list-style-type: none;
+    opacity: 0.9;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+li {
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 360px;
+    }
+    .bottom {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        border-bottom-left-radius: 0;
+    }
+
+    .right {
+        border-bottom-left-radius: 15px;
+    }
+}
